@@ -3,9 +3,9 @@ import { View, Image, StyleSheet} from 'react-native';
 
 const LogoPage = ({ navigation }) => {
   useEffect(() => {
-    console.log("LogoPage mounted"); // Debug log
+    console.log("LogoPage mounted"); 
 
-    // Check if navigation is passed correctly
+   
     if (navigation) {
       console.log("Navigation prop available");
     } else {
@@ -13,13 +13,13 @@ const LogoPage = ({ navigation }) => {
     }
 
 
-    // Navigate to Welcome page after 2 seconds
+    
     const timer = setTimeout(() => {
-      console.log("Navigating to Welcome"); // Debug log
+      console.log("Navigating to Welcome"); 
       navigation.navigate('Welcome');
     }, 2000);
 
-    // Clear timer if the component unmounts
+   
     return () => clearTimeout(timer);
   }, [navigation]);
 

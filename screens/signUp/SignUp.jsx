@@ -8,7 +8,7 @@ const SignUp = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <Image
-        source={require('../../assets/logo.png')} // Add your logo here
+        source={require('../../assets/logo.png')} 
         style={styles.logo}
       />
       <Text style={styles.title}>Sign Up</Text>
@@ -134,36 +134,36 @@ inputWrapper: {
 },
 
 
-  input: { 
+input: { 
     flex: 1, 
     padding: 4, 
     fontSize: 14,
     fontStyle: 'italic',
 },
 
-  icon: { 
+icon: { 
     marginHorizontal: 10 
 },
 
-  agreementContainer: { 
+agreementContainer: { 
     flexDirection: 'row', 
     alignItems: 'center', 
     marginVertical: 10,
     fontFamily: 'Poppins-Regular',
 
-  },
-  agreementText: { 
+},
+agreementText: { 
     marginLeft: 10,
     color: '#000000',
     fontWeight: '500',
     fontFamily: 'Poppins-Regular',
-  },
-  termsLink: { 
+},
+termsLink: { 
     textDecorationLine: 'underline',
     color: '#777',
     fontFamily: 'Poppins-Regular',
-  },
-  signInButton: { 
+},
+signInButton: { 
     backgroundColor: '#A3CFFF', 
     paddingVertical: 8, 
     borderRadius: 30, 
@@ -179,19 +179,19 @@ signInButtonText: {
     color: '#000',
     fontFamily: 'Poppins-Bold',
 },
-  signInText: { 
+signInText: { 
     textAlign: 'center', 
     marginVertical: 10,
     color: '#000',
     fontFamily: 'Poppins-Regular',
   },
-  signInLink: { 
+signInLink: { 
     color: '#000',
     textDecorationLine: 'underline',
     fontWeight: '500',
     fontFamily: 'Poppins-Regular',
   },
-  bottomRightLogo: {
+bottomRightLogo: {
     width: 250,
     height: 150,
     right: 0,
