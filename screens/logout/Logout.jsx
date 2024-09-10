@@ -39,9 +39,10 @@ const styles = StyleSheet.create({
     },
     welcomeText: {
       fontSize: 24,
-      fontWeight: 'bold',
+    //   fontWeight: 'bold',
       marginBottom: 80,
       color: '#000',
+      fontFamily: 'Poppins-Bold',
     },
     logoutButton: {
       backgroundColor: '#A3CFFF',
@@ -55,12 +56,14 @@ const styles = StyleSheet.create({
       shadowRadius: 2,
       elevation: 2,
       marginTop: 80,
+      fontFamily: 'Poppins-Regular',
     },
     logoutText: {
       color: '#000',
       fontSize: 18,
-      fontWeight: 'bold',
+    //   fontWeight: 'bold',
       textAlign: 'center',
+      fontFamily: 'Poppins-Bold',
     },
   });
 

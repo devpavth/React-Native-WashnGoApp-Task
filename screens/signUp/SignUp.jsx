@@ -99,14 +99,15 @@ logo: {
 
 title: { 
     fontSize: 30, 
-    fontWeight: 'bold', 
+    // fontWeight: 'bold', 
     color: '#000',
     marginVertical: 8,
+    fontFamily: 'Poppins-Bold',
 },
-
-  subtitle: { 
+subtitle: { 
     fontSize: 16, 
-    fontWeight: 'bold', 
+    // fontWeight: 'bold', 
+    fontFamily: 'Poppins-Medium',
 },
 inputContainer: { 
     marginBottom: 8, 
@@ -118,6 +119,7 @@ label: {
     marginBottom: 5, 
     color: '#000',
     marginVertical: 6,
+    fontFamily: 'Poppins-Regular',
 },
 
 inputWrapper: {
@@ -146,17 +148,20 @@ inputWrapper: {
   agreementContainer: { 
     flexDirection: 'row', 
     alignItems: 'center', 
-    marginVertical: 10 
+    marginVertical: 10,
+    fontFamily: 'Poppins-Regular',
 
   },
   agreementText: { 
     marginLeft: 10,
     color: '#000000',
     fontWeight: '500',
+    fontFamily: 'Poppins-Regular',
   },
   termsLink: { 
     textDecorationLine: 'underline',
     color: '#777',
+    fontFamily: 'Poppins-Regular',
   },
   signInButton: { 
     backgroundColor: '#A3CFFF', 
@@ -165,22 +170,26 @@ inputWrapper: {
     marginTop: 8, 
     justifyContent: 'center',
     alignItems: 'center',
+    fontFamily: 'Poppins-Regular',
 },
 
 signInButtonText: {
     fontSize: 18,
-    fontWeight: 'bold',
+    // fontWeight: 'bold',
     color: '#000',
+    fontFamily: 'Poppins-Bold',
 },
   signInText: { 
     textAlign: 'center', 
     marginVertical: 10,
     color: '#000',
+    fontFamily: 'Poppins-Regular',
   },
   signInLink: { 
     color: '#000',
     textDecorationLine: 'underline',
     fontWeight: '500',
+    fontFamily: 'Poppins-Regular',
   },
   bottomRightLogo: {
     width: 250,
@@ -192,6 +201,7 @@ signInButtonText: {
 signUpBelowText: {
     textAlign: 'center',
     marginHorizontal: 10,
+    fontFamily: 'Poppins-Regular',
 }
 });
 

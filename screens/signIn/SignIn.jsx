@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center' 
 },
 
-  logo: { 
+logo: { 
     height: 170, 
     width: 230, 
     alignSelf: 'center', 
@@ -98,16 +98,18 @@ const styles = StyleSheet.create({
     marginTop: -10,
 },
 
-  title: { 
+title: { 
     fontSize: 30, 
-    fontWeight: 'bold', 
+    // fontWeight: 'bold', 
     color: '#000',
     marginVertical: 10,
+    fontFamily: 'Poppins-Bold',
 },
 
-  subtitle: { 
+subtitle: { 
     fontSize: 16, 
-    fontWeight: 'bold', 
+    // fontWeight: 'bold', 
+    fontFamily: 'Poppins-Medium',
 },
 
 inputContainer: { 
@@ -120,6 +122,7 @@ label: {
     marginBottom: 5, 
     color: '#000',
     marginVertical: 10,
+    fontFamily: 'Poppins-Regular',
 },
 
 inputWrapper: {
@@ -134,21 +137,23 @@ inputWrapper: {
 },
 
 
-  input: { 
+input: { 
     flex: 1, 
     padding: 10, 
     fontSize: 16,
     fontStyle: 'italic',
+    fontFamily: 'Poppins-Regular',
 },
 
-  icon: { 
+icon: { 
     marginHorizontal: 10 
 },
 
-  forgotPassword: { 
+forgotPassword: { 
     textAlign: 'right', 
     color: '#000000',
     textDecorationLine: 'underline',
+    fontFamily: 'Poppins-Regular',
 },
 
 
@@ -163,8 +168,9 @@ signInButton: {
 
 signInButtonText: {
     fontSize: 18,
-    fontWeight: 'bold',
+    // fontWeight: 'bold',
     color: '#000',
+    fontFamily: 'Poppins-Bold',
 },
 
 orContainer: { 
@@ -198,15 +204,17 @@ orContainer: {
     marginHorizontal: 10,
 },
 
-  signUpText: { 
+signUpText: { 
     textAlign: 'center', 
     marginVertical: 20,
     marginBottom: 20,
+    fontFamily: 'Poppins-Regular',
 },
 
-  signUpLink: { 
+signUpLink: { 
     color: '#000000',
     textDecorationLine: 'underline',
+    fontFamily: 'Poppins-Regular',
 },
 
 bottomLeftLogo: {
@@ -219,6 +227,8 @@ bottomLeftLogo: {
 signUpBelowText: {
     textAlign: 'center',
     marginHorizontal: 10,
+    fontFamily: 'Poppins-Regular',
+    marginTop: -12,
 }
 });
 

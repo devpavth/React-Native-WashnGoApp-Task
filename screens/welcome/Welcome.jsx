@@ -13,7 +13,7 @@ const Welcome = ({ navigation }) => {
       <Text style={styles.title}>Sparkle & Shine Transform</Text>
       <Text style={styles.subtitle}>Your Drive with Every Wash!</Text>
       
-      <TouchableOpacity style={styles.signInButton} onPress={() => navigation.navigate('SignUp')}>
+      <TouchableOpacity style={styles.signInButton} onPress={() => navigation.navigate('SignIn')}>
         <Text style={styles.buttonText}>Let's Start</Text>
       </TouchableOpacity>
 
@@ -38,6 +38,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     marginTop: 40,
     fontWeight: '500',
+    fontFamily: 'Poppins-Regular',
   },
   subtitle: {
     fontSize: 20, 
@@ -45,14 +46,17 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     marginHorizontal: 20,
     fontWeight: '500',
+    fontFamily: 'Poppins-Regular',
   },
   signInLink: {
     marginTop: 20,
     fontSize: 14,
+    fontFamily: 'Poppins-Regular',
   },
   link: {
     color: '#000',
     textDecorationLine: 'underline',
+    fontFamily: 'Poppins-Regular',
   },
   signInButton: {
     backgroundColor: '#A3CFFF',
@@ -67,6 +71,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     textAlign: 'center',
     fontWeight: '500',
+    fontFamily: 'Poppins-SemiBold',
   },
   topRightLogo: {
     width: 210,
