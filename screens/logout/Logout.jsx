@@ -1,7 +1,12 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, Image } from 'react-native';
+import { useRoute, useNavigation } from '@react-navigation/native';
 
-const Logout = ({ navigation }) => {
+const Logout = () => {
+    const route = useRoute();
+    const navigation = useNavigation();
+    const { userName } = route.params || {};
+
   const handleLogout = () => {
     console.log('Logging out');
     navigation.navigate('SignIn');
@@ -14,7 +19,7 @@ const Logout = ({ navigation }) => {
         style={styles.logo}
         resizeMode="contain"
       />
-      <Text style={styles.welcomeText}>Welcome Ramesh</Text>
+      <Text style={styles.welcomeText}>Welcome, {userName ? userName : 'Guest'}!</Text>
       <TouchableOpacity style={styles.logoutButton} onPress={handleLogout}>
         <Text style={styles.logoutText}>Logout</Text>
       </TouchableOpacity>

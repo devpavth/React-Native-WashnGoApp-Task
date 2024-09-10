@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Image} from 'react-native';
 import CheckBox from '@react-native-community/checkbox';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { Button } from 'react-native-paper';
 
 const SignUp = ({ navigation }) => {
+  const [name, setName] = useState('');
+
+  const handleSignUp = () => {
+    navigation.navigate('SignIn', { userName: name });
+  };
   return (
     <View style={styles.container}>
       <Image
@@ -22,7 +27,12 @@ const SignUp = ({ navigation }) => {
                 source={require('../../assets/user.png')} 
                 style={styles.icon}
             />
-            <TextInput placeholder="Enter your name" style={styles.input} />
+            <TextInput 
+              placeholder="Enter your name" 
+              style={styles.input} 
+              value={name}
+              onChangeText={setName}
+            />
         </View>
       </View>
 
@@ -61,7 +71,7 @@ const SignUp = ({ navigation }) => {
 
       <Button 
         mode="contained" 
-        onPress={() => navigation.navigate('SignIn')} 
+        onPress={handleSignUp} 
         style={styles.signInButton}
         labelStyle={styles.signInButtonText}
       >

@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Image } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { Button } from 'react-native-paper';
+import { useRoute, useNavigation } from '@react-navigation/native';
 
-const SignIn = ({ navigation }) => {
+const SignIn = () => {
+    const route = useRoute();
+    const navigation = useNavigation();
+    const { userName } = route.params || {}; 
+
+    const handleSignUp = () => {
+        navigation.navigate('Logout', { userName});
+    };
   return (
     <View style={styles.container}>
       <Image
@@ -46,7 +54,7 @@ const SignIn = ({ navigation }) => {
 
       <Button 
         mode="contained" 
-        onPress={() => navigation.navigate('Logout')} 
+        onPress={handleSignUp} 
         style={styles.signInButton}
         labelStyle={styles.signInButtonText}
       >
