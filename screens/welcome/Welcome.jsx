@@ -13,7 +13,7 @@ const Welcome = ({ navigation }) => {
       <Text style={styles.title}>Sparkle & Shine Transform</Text>
       <Text style={styles.subtitle}>Your Drive with Every Wash!</Text>
       
-      <TouchableOpacity style={styles.signInButton} onPress={() => navigation.navigate('SignIn')}>
+      <TouchableOpacity style={styles.signInButton} onPress={() => navigation.navigate('SignUp')}>
         <Text style={styles.buttonText}>Let's Start</Text>
       </TouchableOpacity>
 

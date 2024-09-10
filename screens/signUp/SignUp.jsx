@@ -16,18 +16,40 @@ const SignUp = ({ navigation }) => {
       <Text style={styles.subtitle}>your car!</Text>
 
       <View style={styles.inputContainer}>
-        <Icon name="user" size={20} style={styles.icon} />
-        <TextInput placeholder="Enter your name" style={styles.input} />
+        <Text style={styles.label}>Name</Text>
+        <View style={styles.inputWrapper}>
+            <Image
+                source={require('../../assets/user.png')} 
+                style={styles.icon}
+            />
+            <TextInput placeholder="Enter your name" style={styles.input} />
+        </View>
       </View>
 
       <View style={styles.inputContainer}>
-        <Icon name="envelope" size={20} style={styles.icon} />
-        <TextInput placeholder="xyz@gmail.com" style={styles.input} />
+        <Text style={styles.label}>Email</Text>
+        <View style={styles.inputWrapper}>
+            <Image
+                source={require('../../assets/mail.png')} 
+                style={styles.icon}
+            />
+            <TextInput placeholder="xyz@gmail.com" style={styles.input} />
+        </View>
       </View>
 
       <View style={styles.inputContainer}>
-        <Icon name="lock" size={20} style={styles.icon} />
-        <TextInput placeholder="password" secureTextEntry={true} style={styles.input} />
+        <Text style={styles.label}>Password</Text>
+        <View style={styles.inputWrapper}>
+            <Image
+                source={require('../../assets/lock.png')} 
+                style={styles.icon}
+            />
+            <TextInput placeholder="password" secureTextEntry={true} style={styles.input} />
+            <Image
+                source={require('../../assets/eye.png')} 
+                style={styles.icon}
+            />
+        </View>
       </View>
 
       <View style={styles.agreementContainer}>
@@ -37,7 +59,12 @@ const SignUp = ({ navigation }) => {
         </Text>
       </View>
 
-      <Button mode="contained" onPress={() => navigation.navigate('SignIn')} style={styles.button}>
+      <Button 
+        mode="contained" 
+        onPress={() => navigation.navigate('SignIn')} 
+        style={styles.signInButton}
+        labelStyle={styles.signInButtonText}
+      >
         Sign Up
       </Button>
 
@@ -66,7 +93,7 @@ logo: {
     height: 170, 
     width: 230, 
     alignSelf: 'center', 
-    marginBottom: 10, 
+    marginBottom: 8, 
     marginTop: -10,
 },
 
@@ -74,31 +101,48 @@ title: {
     fontSize: 30, 
     fontWeight: 'bold', 
     color: '#000',
-    marginVertical: 10,
+    marginVertical: 8,
 },
 
   subtitle: { 
     fontSize: 16, 
     fontWeight: 'bold', 
 },
-  inputContainer: { 
-    flexDirection: 'row', 
-    alignItems: 'center', 
-    borderBottomWidth: 1, 
-    borderBottomColor: '#ccc', 
-    marginBottom: 15 
+inputContainer: { 
+    marginBottom: 8, 
+},
 
-  },
+label: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    marginBottom: 5, 
+    color: '#000',
+    marginVertical: 6,
+},
+
+inputWrapper: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: '#808080',
+    borderRadius: 10,
+    padding: 5,
+    backgroundColor: '#fff',
+    marginTop: 10,
+},
+
+
   input: { 
     flex: 1, 
-    padding: 10, 
-    fontSize: 16 
+    padding: 4, 
+    fontSize: 14,
+    fontStyle: 'italic',
+},
 
-  },
   icon: { 
     marginHorizontal: 10 
+},
 
-  },
   agreementContainer: { 
     flexDirection: 'row', 
     alignItems: 'center', 
@@ -106,28 +150,37 @@ title: {
 
   },
   agreementText: { 
-    marginLeft: 10 
-
+    marginLeft: 10,
+    color: '#000000',
+    fontWeight: '500',
   },
   termsLink: { 
-    color: '#1E90FF' 
-
+    textDecorationLine: 'underline',
+    color: '#777',
   },
-  button: { 
-    backgroundColor: '#87CEEB', 
-    paddingVertical: 10, 
-    borderRadius: 25, 
-    marginTop: 20 
+  signInButton: { 
+    backgroundColor: '#A3CFFF', 
+    paddingVertical: 8, 
+    borderRadius: 30, 
+    marginTop: 8, 
+    justifyContent: 'center',
+    alignItems: 'center',
+},
 
-  },
+signInButtonText: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: '#000',
+},
   signInText: { 
     textAlign: 'center', 
-    marginVertical: 10 
-
+    marginVertical: 10,
+    color: '#000',
   },
   signInLink: { 
-    color: '#1E90FF' 
-
+    color: '#000',
+    textDecorationLine: 'underline',
+    fontWeight: '500',
   },
   bottomRightLogo: {
     width: 250,

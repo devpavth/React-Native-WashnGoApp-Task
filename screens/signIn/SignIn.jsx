@@ -46,7 +46,7 @@ const SignIn = ({ navigation }) => {
 
       <Button 
         mode="contained" 
-        onPress={() => navigation.navigate('SignUp')} 
+        onPress={() => navigation.navigate('Logout')} 
         style={styles.signInButton}
         labelStyle={styles.signInButtonText}
       >

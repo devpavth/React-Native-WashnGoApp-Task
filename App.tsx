@@ -6,6 +6,7 @@ import LogoPage from './screens/logoPage/LogoPage';
 import Welcome from './screens/welcome/Welcome';
 import SignIn from './screens/signIn/SignIn';
 import SignUp from './screens/signUp/SignUp';
+import Logout from './screens/logout/Logout';
 
 const Stack = createStackNavigator();
 
@@ -23,17 +24,22 @@ function App() {
           <Stack.Screen 
             name="Welcome" 
             component={Welcome} 
-            options={{ headerShown: true }}  // Hide header for Welcome page
+            options={{ headerShown: false }}  // Hide header for Welcome page
           />
           <Stack.Screen 
             name="SignIn" 
             component={SignIn} 
-            options={{ headerShown: true }} 
+            options={{ headerShown: false }} 
           />
-           <Stack.Screen 
+          <Stack.Screen 
             name="SignUp" 
             component={SignUp} 
-            options={{ headerShown: true }} 
+            options={{ headerShown: false }} 
+          />
+          <Stack.Screen 
+            name="Logout" 
+            component={Logout} 
+            options={{ headerShown: false }} 
           />
         </Stack.Navigator>
       </NavigationContainer>
